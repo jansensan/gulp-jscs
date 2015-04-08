@@ -4,6 +4,7 @@ var through = require('through2');
 var Checker = require('jscs');
 var loadConfigFile = require('jscs/lib/cli-config');
 var assign = require('object-assign');
+var path = require('path');
 
 module.exports = function (options) {
 	options = options || '.jscsrc';
